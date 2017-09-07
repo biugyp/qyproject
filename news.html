@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    <link href="list.css" rel="stylesheet" type="text/css"/>
+    <script src="js/setHomeSetFav.js" type="text/javascript" charset="gb2312"></script>
+</head>
+<body>
+<div class="top">
+    <div class="top_content">
+        <ul>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#" onclick="AddFavorite(window.location,document.title)">加入收藏</a></li>
+            <li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+        </ul>
+    </div><!--top结束！-->
+</div>
+<div class="wrap">
+    <div class="logo">
+        <div class="logo_left">
+            <img src="images/logo.jpg" alt="慕课网"/>
+        </div>
+        <div class="logo_right">
+            <img src="images/tel.jpg" alt="服务热线"/>24小时服务热线：<span class="tel">123-456-7890</span>
+            <!--用span不用div，因为div是块级元素，会换到下一行，span是内联元素，不会自动换行-->
+        </div>
+
+    </div><!--logo结束-->
+    <div class="nav">
+        <div class="nav_left"></div>
+        <div class="nav_mid">
+            <div class="nav_mid_left">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="">关于慕课</a></li>
+                    <li><a href="">新闻动态</a></li>
+                    <li><a href="">课程中心</a></li>
+                    <li><a href="">在线课程</a></li>
+                    <li><a href="">人才招聘</a></li>
+                </ul>
+            </div>
+            <div class="nav_mid_right">
+                <form action="" method="post">
+                    <input type="text" class="search_text"/>
+                </form>
+            </div>
+        </div><!--nav_mid结束-->
+        <div class="nav_right"></div>
+    </div><!--nav结束-->
+    <div class="ad" id="picbox" style="height:243px;">
+        <!--行内样式的优先级要高于外部样式，行内样式适合写少量样式的地方-->
+        <img src="images/ad.jpg"/>
+    </div><!--ad结束-->
+    <div class="list_main">
+        <div class="news_type">
+            <h2>新闻中心</h2>
+            <div class="news_type_content">
+                <ul>
+                    <li><a href="list.html">公司新闻</a></li>
+                    <li><a href="list.html">行业新闻</a></li>
+                    <li><a href="list.html">媒体报道</a></li>
+                    <li><a href="list.html">活动专题</a></li>
+                    <li><a href="list.html">精彩视频</a></li>
+                    <li><a href="list.html">资源下载</a></li>
+                    <li><a href="list.html">公司内刊</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="list_box">
+            <h2>新闻中心</h2>
+            <h1>习近平向2017中国－阿拉伯国家博览会致贺信</h1>
+            <p class="zuozhe">发布人：Admin 发布时间：2017-09-06 浏览：3246次</p>
+            <div class="news_content">
+                <p>央视网消息(新闻联播)：2017中国-阿拉伯国家博览会9月6日在宁夏银川开幕。国家主席习近平致贺信，对会议的召开表示热烈祝贺。
+                习近平指出，中国同阿拉伯国家是好朋友、好伙伴。历史上，中阿因丝绸之路相知相交。在经济全球化深入发展的今天，中阿成为“
+                一带一路”建设的重要合作伙伴，双方互利合作领域越来越广，成果越来越实。
+                习近平强调，在今年5月举行的“一带一路”国际合作高峰论坛上，我提出要将“一带一路”建成和平之路、繁荣之路、开放之路、
+                创新之路、文明之路，得到阿拉伯世界积极响应和广泛支持。本届博览会突出“务实、创新、联动、共赢”主题，契合“一带一路”
+                国际合作理念，为中阿拓展合作搭建了重要平台。中国愿同包括阿拉伯国家在内的各国一道，推动“一带一路”建设共享机遇，共促和平。</p>
+                <p>韩方称，演习根据从发射地点到朝鲜丰溪里核试验场的距离设定公海目标水域，韩国陆军试射了“玄武”-2A型弹道导弹，韩国空军的
+                F-15K则发射了SLAM-ER远程巡航导弹，打击目标。</p>
+                <p> 此前在9月1日，美韩双方刚刚在原则上达成一致，放宽对韩国弹道导弹能力的限制。按照此前的协议，韩国的弹道导弹最大射程被限定
+                在800公里，弹头重量不能超过500公斤。</p><p>首尔希望将携带弹头的最大重量增至1吨，而五角大楼则表示正在“积极”考虑这一修订。</p>
+            </div>
+        </div><!--list_box结束-->
+
+    </div>
+
+</div><!--wrap结束-->
+<div class="copyright">
+    <div class="copyright_content">
+        <ul>
+            <li><a href="#">关于</a>
+                <ul>
+                    <li><a href="#">品牌故事</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">加入我们</a></li>
+                    <li><a href="#">版权声明</a></li>
+                </ul>
+            </li>
+            <li><a href="#">课程</a>
+                <ul>
+                    <li><a href="#">php开发</a></li>
+                    <li><a href="#">前端开发</a></li>
+                    <li><a href="#">JAVA开发</a></li>
+                    <li><a href="#">Android开发</a></li>
+                </ul>
+            </li>
+            <li><a href="#">留言</a>
+                <ul>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">腾讯微博</a></li>
+                    <li><a href="#">企业微信</a></li>
+                    <li><a href="#">QQ空间</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#">关注</a>
+                <ul>
+                    <li><a href="#">意见反馈</a></li>
+                    <li><a href="#">问题留言</a></li>
+                    <li><a href="#">媒体联络</a></li>
+                    <li><a href="#">在线客服</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#"><img src="images/weixin.png"/>微信关注</a>
+                <ul>
+                    <li><img src="images/qrcode.jpg"/></li>
+                </ul>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+.list_main{
+    min-height:350px;/*ie6不支持，但支持下面一行的_height，且可以根据内容自动撑开*/
+    _height:350px;
+    background:#FFF;
+    margin-top:10px;
+}
+.news_type{
+    height:350px;
+    width:220px;
+    float:left;
+}
+.list_box{
+    min-height:350px;/*不定义高度不会显示，但是网页不要定义为固定的宽度，内容多了会发生溢出，此时定义一个最小的高度比较合适*/
+    _height:350px;/*兼容ie6*/
+    width:770px;
+
+    float:right;
+    background:#fff;
+}
+.news_type h2{
+    height:35px;
+    line-height:35px;
+    color:#666;
+    font-size:14px;
+    font-family:"微软雅黑";
+    background:url(images/titile_bg.gif) repeat-x;
+    padding-left:20px;
+}
+.news_type_content{
+    height:365px;
+    background:url(images/content_bg.gif) repeat-x;
+}
+.news_type_content li{
+    list-style-type:none;
+    height:30px;
+    line-height:30px;
+
+}
+.news_type_content li a{
+    color:#666;
+    text-decoration:none;
+    background:url(images/li_bg.gif) no-repeat left center;/*控制背景图片的位置，水平方向靠左，垂直方向居中*/
+    padding-left:15px;
+    display:block;
+}
+.news_type_content li a:hover{
+    color:#009CDF;
+    background:url(images/li_bg2.gif) no-repeat left center;
+    background-color:#F2F2F2;
+    /*当同时有背景图片和背景颜色时，会首选背景图片，在背景图片显示不到的区域，会显示背景颜色，此时左侧是北背景图片，no-repeat
+    以后右边部分显示背景颜色。但是只有有文字的地方有颜色，后面空白块区域无颜色产生这种情况的原因是li是内联元素，要改变这种
+    情况把li里面的a改变为块状元素，display：block*/
+}
+.list_box h2{
+    font-size:14px;font-family:"微软雅黑";
+    color:#8E8E8E;
+    margin-left:20px;
+    background:url(images/titile_bg.gif) repeat-x;
+    height:35px;
+    line-height:35px;
+}
+.page{
+    height:40px;
+    margin-top:10px;
+    text-align:center;
+}
+.page a{
+    display:inline-block;/*a是内联元素，在设置样式后在不同浏览器中显示的效果不一样，有些设置不起作用，此时把a改为display：inline-block
+    既兼顾内联元素，又是块状元素，既可在同一行显示，又可设置宽高度*/
+    border:1px solid #8E8E8E;
+    text-decoration:none;
+    margin:5px;
+    padding:5px 10px;
+}
+.page a:link,.page a:visited{
+    color:#000;
+}
+.page a:hover,.page a:active{
+    color:white;
+    background:red;
+}
+.list_box h1{
+    font-size:20px;
+    font-family:"微软雅黑";
+    text-align:center;
+    margin:10px 0;
+}
+.zuozhe{
+    color:#666;
+    text-align:center;
+    border-bottom:1px dotted #666;
+}
+.news_content{
+    font-size:14px;
+    padding:20px;
+    line-height:25px;/*设置行高，行与行之间的距离*/
+    text-indent:2em;/*首行缩进2个字符，文字里面设置p段落*/
+}
